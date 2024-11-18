@@ -15,6 +15,9 @@ Hardware – PCs, Cyclone II , USB flasher
 **Software – Quartus prime**
 
 **Theory**
+![image](https://github.com/user-attachments/assets/bb365ea1-b9c8-4b7a-a753-ba51ea4817eb)
+
+
 
 **Logic Diagram**
 
@@ -32,19 +35,34 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+module exp2(f_and,f_or,f_nor,f_not,f_nand,f_xor,f_xnor,a,b);
+input a,b;
+output f_and,f_or,f_nor,f_not,f_nand,f_xor,f_xnor;
+and (f_and,a,b);
+or (f_or,a,b);
+not (f_not,a);
+nor (f_nor,a,b);
+nand (f_nand,a,b);
+xor (f_xor,a,b);
+xnor (f_xnor,a,b);
+endmodule
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: RegisterNumber:24900901
 
 
 **RTL realization**
+![image](https://github.com/user-attachments/assets/e34b64f6-1e1b-45f3-8607-e19cf6230284)
 
-**Output:**
 
-**RTL**
+
+
 
 **Timing Diagram**
+![Screenshot 2024-11-18 180545](https://github.com/user-attachments/assets/7513ccec-1771-4dcc-b69b-eb8a91738cd7)
+
+
 
 **Result:**
 
